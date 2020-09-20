@@ -2,45 +2,55 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Happy Campers</title>
-      
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-        type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="CSS/style.css">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-        <div class="ui stackable grid system" name="dropDown" id="selectStatePark">
-            <div class="three wide column" id="statePark">
-              <select class="ui selection dropdown" id="ParkDropDown">
-                <option value="" id="resetImage">Select a State Park</option>
-                <option value="yell" id="yell">Yellowstone</option>
-                <option value="grca" id="grca">The Grand Canyon</option>
-                <option value="olym" id="olym">Olympic</option>
-                <option value="bibe" id="bibe">Big Bend</option>
-                <
-              </select>
-            </div>
-            </div> 
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Happy Campers</title>
 
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<div class="ui stackable grid system" name="dropDown" id="selectStatePark">
+			<div class="three wide column" id="statePark">
+				<select class="ui selection dropdown" id="ParkDropDown">
+					<option value="" id="resetImage">Select a State Park</option>
+					<option value="yell" id="yell">Yellowstone</option>
+					<option value="grca" id="grca">The Grand Canyon</option>
+					<option value="olym" id="olym">Olympic</option>
+					<option value="bibe" id="bibe">Big Bend</option>
+					<
+				</select>
+			</div>
+		</div>
 
+		<div>
+			<h2 class="Hours"></h2>
+			<p class="parkHours"></p>
+			<h2 class="Directions"></h2>
+			<p class="parkDirections"></p>
+			<p class="parkWinter"></p>
+			<h2 class="Number"></h2>
+			<p class="parkNumber"></p>
 
-        </div>
+			<!---------------Forecast below------------->
+		</div>
 
-
-
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-        <script src="javascript/API.js"></script>
-    </body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+		<script src="javascript/API.js"></script>
+	</body>
 </html>
