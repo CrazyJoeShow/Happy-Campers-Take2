@@ -14,4 +14,13 @@ $(document).ready(function () {
 			method: 'GET',
 		}).then(function (response) {
             console.log(response)
+            $(".Hours").text("Hours"); 
+            $(".Directions").text("Directions")
+            $(".Number").text("Phone Number")
+                $(".threeDayForecast").text("Three Day Forecast")
+            
+                $(".parkDirections").text(response.data[0].directionsInfo); 
+                $(".parkHours").text(response.data[0].operatingHours[0].description);
+                $(".parkNumber").text(response.data[0].contacts.phoneNumbers[0].phoneNumber[0] +
+                
         })})})
