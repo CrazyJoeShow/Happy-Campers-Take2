@@ -50,5 +50,16 @@ $(document).ready(function () {
                    $(".weatherDate1").text(response.forecast.forecastday[1].date); 
                    $(".weatherDate2").text(response.forecast.forecastday[2].date);
                    
+                   $(".weatherCondition0").text(response.forecast.forecastday[0].day.condition.text);
+                   $(".weatherCondition1").text(response.forecast.forecastday[1].day.condition.text);
+                   $(".weatherCondition2").text(response.forecast.forecastday[2].day.condition.text);
+
+                   $(".weatherTemp0").text(response.forecast.forecastday[0].day.avgtemp_f + "F"); 
+                    $(".weatherTemp1").text(response.forecast.forecastday[1].day.avgtemp_f + "F"); 
+                    $(".weatherTemp2").text(response.forecast.forecastday[2].day.avgtemp_f + "F"); 
+
+                    $(".weatherIcon0").html(weatherIcon0); 
+                    $(".weatherIcon1").html(weatherIcon1); 
+                    $(".weatherIcon2").html(weatherIcon2); 
                     
-        })})})
+        })})})})
