@@ -14,8 +14,7 @@ $(document).ready(function () {
 			method: 'GET',
 		}).then(function (response) {
             console.log(response)
-
-
+            
             $('.Hours').text('Hours');
 			$('.Directions').text('Directions');
 			$('.Number').text('Phone Number');
@@ -23,5 +22,5 @@ $(document).ready(function () {
 
 			var parkImg = $('<img>').attr('src', response.data[0].images[0].url);
 			var parkImg2 = $('<img>').attr('src', response.data[0].images[1].url);
+
         }
-        
