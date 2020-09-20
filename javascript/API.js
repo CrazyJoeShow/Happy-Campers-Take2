@@ -18,6 +18,9 @@ $(document).ready(function () {
             $(".Directions").text("Directions")
             $(".Number").text("Phone Number")
                 $(".threeDayForecast").text("Three Day Forecast")
+
+                var parkImg = $("<img>").attr("src", response.data[0].images[0].url);
+                var parkImg2 = $("<img>").attr("src", response.data[0].images[1].url);
             
                 $(".parkDirections").text(response.data[0].directionsInfo); 
                 $(".parkHours").text(response.data[0].operatingHours[0].description);
@@ -32,4 +35,6 @@ $(document).ready(function () {
                     response.data[0].contacts.phoneNumbers[0].phoneNumber[8] +
                     response.data[0].contacts.phoneNumbers[0].phoneNumber[9]
                     ); 
+                    $(".parkImg").html(parkImg); 
+                $(".parkImg2").html(parkImg2); 
         })})})
