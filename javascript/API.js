@@ -22,5 +22,14 @@ $(document).ready(function () {
                 $(".parkDirections").text(response.data[0].directionsInfo); 
                 $(".parkHours").text(response.data[0].operatingHours[0].description);
                 $(".parkNumber").text(response.data[0].contacts.phoneNumbers[0].phoneNumber[0] +
-                
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[1] +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[2] + "-" +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[3] +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[4] +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[5] + "-" +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[6] +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[7] +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[8] +
+                    response.data[0].contacts.phoneNumbers[0].phoneNumber[9]
+                    ); 
         })})})
